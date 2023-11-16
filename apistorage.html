@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("tenor.gif");
+            background-repeat: no-repeat;
+            background-position: right ;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body >
+    <script>
+        let value = JSON.parse(localStorage.getItem("See More"));
+        console.log(value);
+        let createimg = document.createElement("img");
+        createimg.setAttribute("src",value.image);
+        createimg.style.width = "150px";
+        createimg.style.height = "150px";
+        document.body.appendChild(createimg);
+        // let btn = document.createElement("button");
+        // btn.addEventListener("click",()=>{
+        //     window.history.back()
+        // })
+    </script>
+</body>
+</html>
